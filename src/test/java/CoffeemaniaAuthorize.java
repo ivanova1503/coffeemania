@@ -40,7 +40,7 @@ public class CoffeemaniaAuthorize {
         $("#meetphone-submit-btn").click();
         $("#otc-1").click();
         $("#otc-1").setValue(newdate);
-        //$x("//div[@class='ajaxWindow addrForm']").shouldBe(visible);
+        //$x("//div[@id='restaurantChooseWrapper']/div[2]").shouldBe(visible);
         sleep(10000);
         $(".ajaxClosePicker").click();
         $x("//a[@href='/cabinet']//img[1]").click();

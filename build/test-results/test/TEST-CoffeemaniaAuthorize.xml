@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CoffeemaniaAuthorize" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-03-04T14:59:34" hostname="DESKTOP-UUDUEHP" time="12.055">
+<testsuite name="CoffeemaniaAuthorize" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-03-04T15:09:18" hostname="DESKTOP-UUDUEHP" time="12.055">
   <properties/>
   <testcase name="autorizationTest()" classname="CoffeemaniaAuthorize" time="12.055">
-    <failure message="Element not found {.ajaxClosePicker}&#13;&#10;Expected: visible or transparent: visible or have css value opacity=0&#13;&#10;Screenshot: file:/C:/Users/y.ivanova/IdeaProjects/coffeemania/build/reports/tests/1646405986239.0.png&#13;&#10;Page source: file:/C:/Users/y.ivanova/IdeaProjects/coffeemania/build/reports/tests/1646405986239.0.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ajaxClosePicker&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.ajaxClosePicker}
-Expected: visible or transparent: visible or have css value opacity=0
-Screenshot: file:/C:/Users/y.ivanova/IdeaProjects/coffeemania/build/reports/tests/1646405986239.0.png
-Page source: file:/C:/Users/y.ivanova/IdeaProjects/coffeemania/build/reports/tests/1646405986239.0.html
+    <failure message="Element not found {By.xpath: //div[@id='restaurantChooseWrapper']/div[2]}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/Users/y.ivanova/IdeaProjects/coffeemania/build/reports/tests/1646406570272.0.png&#13;&#10;Page source: file:/C:/Users/y.ivanova/IdeaProjects/coffeemania/build/reports/tests/1646406570272.0.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id='restaurantChooseWrapper']/div[2]&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {By.xpath: //div[@id='restaurantChooseWrapper']/div[2]}
+Expected: visible
+Screenshot: file:/C:/Users/y.ivanova/IdeaProjects/coffeemania/build/reports/tests/1646406570272.0.png
+Page source: file:/C:/Users/y.ivanova/IdeaProjects/coffeemania/build/reports/tests/1646406570272.0.html
 Timeout: 4 s.
-Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ajaxClosePicker&quot;}
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id='restaurantChooseWrapper']/div[2]&quot;}
 	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:83)
 	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:122)
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:114)
-	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:139)
-	at com.codeborne.selenide.commands.Click.execute(Click.java:24)
-	at com.codeborne.selenide.commands.Click.execute(Click.java:16)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
 	at com.codeborne.selenide.commands.Commands.execute(Commands.java:157)
 	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:134)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:86)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at CoffeemaniaAuthorize.autorizationTest(CoffeemaniaAuthorize.java:45)
+	at com.sun.proxy.$Proxy12.shouldBe(Unknown Source)
+	at CoffeemaniaAuthorize.autorizationTest(CoffeemaniaAuthorize.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,15 +108,15 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ajaxClosePicker&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id='restaurantChooseWrapper']/div[2]&quot;}
   (Session info: chrome=98.0.4758.102)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-UUDUEHP', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Y0E9B~1.IVA\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 29217ccc10decbe3c0efeac0f7beb880
-*** Element info: {Using=css selector, value=.ajaxClosePicker}
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Y0E9B~1.IVA\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:50277}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7164915fa25ab4c598805cd7acce5d89
+*** Element info: {Using=xpath, value=//div[@id='restaurantChooseWrapper']/div[2]}
 	at jdk.internal.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -128,26 +127,26 @@ Session ID: 29217ccc10decbe3c0efeac0f7beb880
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
 	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
 	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
 	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:102)
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:99)
-	... 98 more
+	... 97 more
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 18773
+Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 11142
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-мар. 04, 2022 4:59:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+мар. 04, 2022 5:09:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
