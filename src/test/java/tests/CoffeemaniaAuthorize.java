@@ -28,6 +28,7 @@ public class CoffeemaniaAuthorize {
 
     @BeforeAll
     static void setUp() {
+
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "http://149.154.70.38:4444/wd/hub";
