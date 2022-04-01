@@ -1,6 +1,9 @@
+package tests;
+
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
@@ -17,12 +20,14 @@ import static com.codeborne.selenide.files.DownloadActions.click;
 public class CoffeemaniaAuthorize {
 
 
-    @BeforeAll
+    /*@BeforeAll
     static void beforeAll() {
         Configuration.startMaximized = true;
     }
+     */
 
     @Test
+    @Tag("autorizationTest")
     void autorizationTest() {
 
         TimeZone zone = TimeZone.getTimeZone("GMT+3:00");

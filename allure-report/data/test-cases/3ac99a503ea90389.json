@@ -1,0 +1,67 @@
+{
+  "uid" : "3ac99a503ea90389",
+  "name" : "autorizationTest()",
+  "fullName" : "tests.CoffeemaniaAuthorize.autorizationTest",
+  "historyId" : "9eb6351dcf9569abfbe730707835b48b",
+  "time" : {
+    "start" : 1648821707886,
+    "stop" : 1648821742414,
+    "duration" : 34528
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "autorizationTest"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:tests.CoffeemaniaAuthorize]/[method:autorizationTest()]"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-UUDUEHP"
+  }, {
+    "name" : "thread",
+    "value" : "11256@DESKTOP-UUDUEHP.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "tests.CoffeemaniaAuthorize"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.CoffeemaniaAuthorize"
+  }, {
+    "name" : "testMethod",
+    "value" : "autorizationTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.CoffeemaniaAuthorize"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "autorizationTest" ]
+  },
+  "source" : "3ac99a503ea90389.json",
+  "parameterValues" : [ ]
+}
