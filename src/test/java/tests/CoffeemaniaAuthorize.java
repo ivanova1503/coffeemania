@@ -6,6 +6,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -20,11 +22,16 @@ import static com.codeborne.selenide.files.DownloadActions.click;
 public class CoffeemaniaAuthorize {
 
 
-    /*@BeforeAll
-    static void beforeAll() {
-        Configuration.startMaximized = true;
+    @BeforeAll
+    static void setUp() {
+        Configuration.browserSize = "1920x1080";
+        Configuration.remote = "http://149.154.70.38:4444/wd/hub";
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", true);
+        Configuration.browserCapabilities = capabilities;
     }
-     */
+
 
     @Test
     @Tag("autorizationTest")
