@@ -43,26 +43,27 @@ public class CoffeemaniaAuthorize {
     @Tag("autorizationTest")
     void autorizationTest() {
 
-        TimeZone zone = TimeZone.getTimeZone("GMT+3:00");
-        Calendar c = Calendar.getInstance(zone);
-
-        int hour = c.get(Calendar.HOUR_OF_DAY);
-        int minute = c.get(Calendar.MINUTE);
-
-        String newdate= "";
-        newdate += Integer.toString(hour) + String.format("%02d", minute);
 
         open("https://develop.web-v1.coffeemania.axept.com/");
         $x("//a[@href='/login']//img[1]").click();
         $("#input-phone").setValue("9917000320");
         $("#meetphone-submit-btn").click();
         $("#otc-1").click();
+
+        TimeZone zone = TimeZone.getTimeZone("GMT+3:00");
+        Calendar c = Calendar.getInstance(zone);
+
+        int hour = c.get(Calendar.HOUR_OF_DAY);
+        int minute = c.get(Calendar.MINUTE);
+
+        String newdate = "";
+        newdate += String.format("%02d", hour) + String.format("%02d", minute);
+
         $("#otc-1").setValue(newdate);
         //$x("//div[@id='restaurantChooseWrapper']/div[2]").shouldBe(visible);
         sleep(10000);
         $(".ajaxClosePicker").click();
         $x("//a[@href='/cabinet']//img[1]").click();
-
 
 
     }
