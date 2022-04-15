@@ -20,7 +20,7 @@ public class TestBase {
         Configuration.baseUrl = "https://develop.web-v1.coffeemania.axept.com/";
         Configuration.browserSize = "1920x1080";
         Configuration.browser = System.getProperty("browser");
-        //Configuration.browserVersion = System.getProperty("version", "91");
+        Configuration.browserVersion = System.getProperty("version");
         Configuration.remote = "http://149.154.70.38:4444/wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
