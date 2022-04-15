@@ -20,23 +20,13 @@ import java.util.TimeZone;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.files.DownloadActions.click;
 
-public class CoffeemaniaAuthorize {
+public class CoffeemaniaAuthorize extends TestBase{
 
 
-    @BeforeAll
-    static void setUp() {
-
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        Configuration.browserSize = "1920x1080";
-        Configuration.remote = "http://149.154.70.38:4444/wd/hub";
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
-        Configuration.browserCapabilities = capabilities;
-    }
 
 
     @Test
@@ -44,7 +34,7 @@ public class CoffeemaniaAuthorize {
     void autorizationTest() {
 
 
-        open("https://develop.web-v1.coffeemania.axept.com/");
+        open(baseUrl);
         $x("//a[@href='/login']//img[1]").click();
         $("#input-phone").setValue("9917000320");
         $("#meetphone-submit-btn").click();
@@ -69,13 +59,5 @@ public class CoffeemaniaAuthorize {
     }
 
 
-    @AfterEach
-    void addAttachments() {
-        Attach.screenshotAs("Last screenshot");
-        Attach.pageSource();
-        Attach.browserConsoleLogs();
-        Attach.addVideo();
-        closeWebDriver();
-    }
 
 }
